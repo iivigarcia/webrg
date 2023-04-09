@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import CustomizedDialogs from "./Popup";
 // import react slick
 import Slider from "react-slick";
 import Image from "next/image";
@@ -10,40 +10,36 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Roxy Club",
+      image: "/assets/roxyalta.png",
+      city: "Palermo",
+      country: "Argentina",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Uno de nuestros eventos en Roxy Club, tocó la Dean Band y participaron clientes mayoristas de todo el país",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Primer encuentro de comerciantes",
+      image: "/assets/1erencuentro.png",
+      city: "Canning",
+      country: "Argentina",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "En nuestra inauguración del parque industrial trajimos a muchos de nuestros clientes de todo el país a conocerlo",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Metal Para Todos",
+      image: "/assets/metalparatodos.png",
+      city: "CABA",
+      country: "Argentina",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Como representantes de grandes marcas, fuimos organizadores de un gran evento con grandes artistas",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Schecter",
+      image: "/assets/malosetti.png",
+      city: "Canning",
+      country: "Argentina",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Participamos en la primera linea de instrumentos signature de una marca americana, con un gran músico argentino, Javier Malosetti",
     },
   ],
 }) => {
@@ -96,9 +92,10 @@ const Testimoni = ({
                 <div className="flex order-2 xl:order-1">
                   <Image
                     src={listTestimonis.image}
-                    height={50}
-                    width={50}
+                    height={300}
+                    width={300}
                     alt="Icon People"
+                    borderRadius="10%"
                   />
                   <div className="flex flex-col ml-5 text-left">
                     <p className="text-lg text-black-600 capitalize">
@@ -110,14 +107,13 @@ const Testimoni = ({
                   </div>
                 </div>
                 <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
-                  <p className="text-sm">{listTestimonis.rating}</p>
                   <span className="flex ml-4">
-                    <Stars className="h-4 w-4" />
                   </span>
                 </div>
               </div>
               <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>
-            </div>
+              <br/>
+              </div>            
           </div>
         ))}
       </Slider>
