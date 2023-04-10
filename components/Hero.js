@@ -95,8 +95,8 @@ const Hero = ({
               variants={scrollAnimation}
             >
               <div className="flex mx-auto w-60 sm:w-auto">
-                <div className="flex items-center justify-center bg-orange-100 w-24 h-24 mr-6 rounded-full">
-                  <img src={listUsers.icon} className="h-20 w-20" />
+                <div className="flex items-center justify-center bg-orange-100 sm:w-24 h-24 mr-6 lg:w-12 lg:h-12 rounded-full">
+                  <img src={listUsers.icon} className="sm:h-20 w-20 lg:w-8 lg:h-8" />
                 </div>
                 <div className="flex flex-col">
                   <p className="text-3xl text-black-600 font-bold">
