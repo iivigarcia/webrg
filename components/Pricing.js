@@ -32,7 +32,7 @@ const Pricing = () => {
               Nuestra amplia trayectoria nos permitió conformar un grupo de empresas <strong>100%</strong> dedicadas a los instrumentos músicales
             </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6 lg:grid-rows-3" >
+          <div className="grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 sm:px-0 lg:px-6 lg:grid-rows-3" >
           <ScrollAnimationWrapper className="flex justify-center" style={{height:'350px', width:'350px'}}>
               <motion.div
                 variants={scrollAnimation}
